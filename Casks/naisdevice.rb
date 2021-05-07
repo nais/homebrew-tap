@@ -10,6 +10,6 @@ cask "naisdevice" do
   pkg "naisdevice.pkg"
 
   uninstall pkgutil: [
-    "io.nais.device"
+    "io.nais.device",
   ]
 end
