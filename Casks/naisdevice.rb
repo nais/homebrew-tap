@@ -8,4 +8,8 @@ cask "naisdevice" do
   homepage "https://github.com/nais/device"
 
   pkg "naisdevice.pkg"
+
+  uninstall pkgutil: [
+    "io.nais.device"
+  ]
 end
