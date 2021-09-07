@@ -5,28 +5,28 @@
 class Debuk < Formula
   desc "Simple Aiven Kafka Debug Cli"
   homepage "https://github.com/nais/debuk"
-  version "0.0.1"
+  version "0.0.2"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nais/debuk/releases/download/v0.0.1/debuk_0.0.1_darwin_amd64.tar.gz"
-      sha256 "46808f3387ac79cec5229e9fff9ba8f83734f988fa8718b14c1fa8ed1e7f7dd1"
+      url "https://github.com/nais/debuk/releases/download/v0.0.2/debuk_0.0.2_darwin_amd64.tar.gz"
+      sha256 "ba4833ca239a70f0ff569aca6ed8f7e8214a0bcde5c4e2fbf26d3a74c22f782e"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nais/debuk/releases/download/v0.0.1/debuk_0.0.1_darwin_arm64.tar.gz"
-      sha256 "44e2e30f556833b77446c5f01be8f8966aff7c9c7a4279f94ae4964aaec801bb"
+      url "https://github.com/nais/debuk/releases/download/v0.0.2/debuk_0.0.2_darwin_arm64.tar.gz"
+      sha256 "893279c741da1a8115826f13895a9b5d677913d91223a1ed8bad6b05c73724d3"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/nais/debuk/releases/download/v0.0.1/debuk_0.0.1_linux_amd64.tar.gz"
-      sha256 "2c95646b2554b3f6a3fda1ef14e54f48e6fa4972e5d8f07883528b452c78b47e"
+      url "https://github.com/nais/debuk/releases/download/v0.0.2/debuk_0.0.2_linux_amd64.tar.gz"
+      sha256 "705a422e3dbe3b22360becfc5e47dd504bdeb546ad00470a2691f41e282d772e"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nais/debuk/releases/download/v0.0.1/debuk_0.0.1_linux_arm64.tar.gz"
-      sha256 "f46fa22b10394887ba01d9d553c70ed546282ed6139d9e493d8c2d09a6670463"
+      url "https://github.com/nais/debuk/releases/download/v0.0.2/debuk_0.0.2_linux_arm64.tar.gz"
+      sha256 "400820377fdcf88fee2592061433ab2b6a2aca817f5270f6de7a72e940d4dabb"
     end
   end
 
