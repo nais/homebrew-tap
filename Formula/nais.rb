@@ -5,24 +5,24 @@
 class Nais < Formula
   desc "Simple Aiven Kafka Debug Cli"
   homepage "https://github.com/nais/nais-cli"
-  version "1.20210924123644"
+  version "1.20210927065731"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nais/nais-cli/releases/download/1.20210924123644/nais-cli_1.20210924123644_darwin_amd64.tar.gz"
-      sha256 "46680a145ea78a74801af960fe58730c89f2a12346800eb87d22fda8fd1acb5f"
+      url "https://github.com/nais/nais-cli/releases/download/1.20210927065731/nais-cli_1.20210927065731_darwin_amd64.tar.gz"
+      sha256 "b2ca10f6cfc8ecb248063b2e5e8a726741b0795ff2e9b7aa76806aa1db9337e9"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nais/nais-cli/releases/download/1.20210924123644/nais-cli_1.20210924123644_darwin_arm64.tar.gz"
-      sha256 "b47752fda4ac917c277645d18cb6f44dea26627813d5b34b80c15f6ccab9ad1e"
+      url "https://github.com/nais/nais-cli/releases/download/1.20210927065731/nais-cli_1.20210927065731_darwin_arm64.tar.gz"
+      sha256 "8cd55341ee3a53c9c053cb5afad9fe5fff5b57b311a9ea51477963c1ebc7e757"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/nais/nais-cli/releases/download/1.20210924123644/nais-cli_1.20210924123644_linux_amd64.tar.gz"
-      sha256 "27e28bef25a15a34b89ec942fa955432e51b0f153c00e37e7df46a600f36ba82"
+      url "https://github.com/nais/nais-cli/releases/download/1.20210927065731/nais-cli_1.20210927065731_linux_amd64.tar.gz"
+      sha256 "7b382332cabe7f4d20fc2ef3f3ceb4a450c2de527078bf30ff9e1de84089013a"
     end
   end
 
