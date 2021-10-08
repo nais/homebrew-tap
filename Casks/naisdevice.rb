@@ -1,6 +1,6 @@
 cask "naisdevice" do
-  version "2021-10-04-111116"
-  sha256 "24130a87460a229bf8de19e9959c52a8637b722d778e0efca75398e7d891a981"
+  version "2021-10-08-120114"
+  sha256 "f157743b9dc839c7a9b8402fe329c2860b542289c3b955906ddbcc74f654d98c"
 
   url "https://github.com/nais/device/releases/download/#{version}/naisdevice.pkg"
   name "naisdevice"
