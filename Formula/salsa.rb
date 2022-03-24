@@ -5,21 +5,21 @@
 class Salsa < Formula
   desc "Command-line interface for SLSA provenance"
   homepage "https://github.com/nais/salsa"
-  version "0.1.20220324094800"
+  version "0.1.20220324121039"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/nais/salsa/releases/download/0.1.20220324094800/nais-salsa_0.1.20220324094800_darwin_arm64.tar.gz"
-      sha256 "da4f0c9200358bfccfd12ae0564d2f223f21f86e653a28e3321f49ef78f88f16"
+      url "https://github.com/nais/salsa/releases/download/0.1.20220324121039/nais-salsa_0.1.20220324121039_darwin_arm64.tar.gz"
+      sha256 "8ae9e415b95bbab8be30ba23d9c212045951614af4c7343e17ffe01460462a56"
 
       def install
         bin.install "salsa"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nais/salsa/releases/download/0.1.20220324094800/nais-salsa_0.1.20220324094800_darwin_amd64.tar.gz"
-      sha256 "2ded360d6440f57901c6714d2f0247ebbd30084d1f2038d7e4788dd8ed7018ab"
+      url "https://github.com/nais/salsa/releases/download/0.1.20220324121039/nais-salsa_0.1.20220324121039_darwin_amd64.tar.gz"
+      sha256 "f0b30e38c44fa2ac4244caec903aba2a40112fab5363b837554e430e5eed9d11"
 
       def install
         bin.install "salsa"
@@ -29,8 +29,8 @@ class Salsa < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/nais/salsa/releases/download/0.1.20220324094800/nais-salsa_0.1.20220324094800_linux_amd64.tar.gz"
-      sha256 "9809e3df8f7e4686cb18cb60e304db7bafbdde7e91be6234bf15c9f118ee96d8"
+      url "https://github.com/nais/salsa/releases/download/0.1.20220324121039/nais-salsa_0.1.20220324121039_linux_amd64.tar.gz"
+      sha256 "2e368a970b522e05565ad0085f16b306d490928ef6d211ce204e647d3eee4bce"
 
       def install
         bin.install "salsa"
