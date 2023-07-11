@@ -5,20 +5,20 @@
 class Nais < Formula
   desc "Command-line interface for NAIS"
   homepage "https://github.com/nais/cli"
-  version "1.20230710123611"
+  version "1.20230711061611"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nais/cli/releases/download/1.20230710123611/nais-cli_1.20230710123611_darwin_amd64.tar.gz"
-      sha256 "7bf52a57dc204dd4252641a4fc7c8eb0890b6efb5e68d6cc570e310ad54f0284"
+      url "https://github.com/nais/cli/releases/download/1.20230711061611/nais-cli_1.20230711061611_darwin_amd64.tar.gz"
+      sha256 "f6ae6bee67cf9d7ce5a103fa806c26c7e4c10eb37b27dce01401ba77324dc595"
 
       def install
         bin.install "nais"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nais/cli/releases/download/1.20230710123611/nais-cli_1.20230710123611_darwin_arm64.tar.gz"
-      sha256 "93019bed5d190539218962947d9e7aec2a62ec9e9a0ff9240a85ce899b4735a6"
+      url "https://github.com/nais/cli/releases/download/1.20230711061611/nais-cli_1.20230711061611_darwin_arm64.tar.gz"
+      sha256 "6fc090d10c83471e014e626e2c287cc9b896039e6ec97b806a617150dd4733b4"
 
       def install
         bin.install "nais"
@@ -28,8 +28,8 @@ class Nais < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/nais/cli/releases/download/1.20230710123611/nais-cli_1.20230710123611_linux_amd64.tar.gz"
-      sha256 "319812ac146e875e455dd49711af2f7b9e353dc09010f6e83fc882ea5e468a77"
+      url "https://github.com/nais/cli/releases/download/1.20230711061611/nais-cli_1.20230711061611_linux_amd64.tar.gz"
+      sha256 "df7e3c5c7f8eead30e7caa7ce91467be8e40632588a7f05a803192c56bdba026"
 
       def install
         bin.install "nais"
