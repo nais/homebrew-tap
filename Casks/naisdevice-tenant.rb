@@ -1,6 +1,6 @@
 cask "naisdevice-tenant" do
-  version "2023-11-02-145937"
-  sha256 "38d3fb4e4885e1f6bca6fe8ec69fa06d3598e41e87f489262c32daf0473fd6b1"
+  version "2023-11-02-161342"
+  sha256 "d572f2ed2e32dbdc0c43b238bf8c4003c5ef5f1b1b0848d9e812f058a3295d7e"
 
   url "https://github.com/nais/device/releases/download/#{version}/naisdevice-tenant.pkg"
   name "naisdevice-tenant"
