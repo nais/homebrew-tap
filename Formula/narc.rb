@@ -5,20 +5,20 @@
 class Narc < Formula
   desc "NAIS Administration CLI"
   homepage "https://github.com/nais/narcos"
-  version "1.20240911103615"
+  version "1.20240912113159"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/nais/narcos/releases/download/1.20240911103615/narc-cli_1.20240911103615_darwin_arm64.tar.gz"
-      sha256 "1c6b0394855f2978380ff79f50161f4bf78bd3c775fd37045005408630511907"
+    if Hardware::CPU.intel?
+      url "https://github.com/nais/narcos/releases/download/1.20240912113159/narc-cli_1.20240912113159_darwin_amd64.tar.gz"
+      sha256 "f9ca1c8ce44ce2e900e47bbec52820c5c358c7f2051f84ae38723cdcf9e03a86"
 
       def install
         bin.install "narc"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/nais/narcos/releases/download/1.20240911103615/narc-cli_1.20240911103615_darwin_amd64.tar.gz"
-      sha256 "9bce9ef23d778d049a9ca06b4bbf9b7a14d05139852a54c4ddc3a64bcebb1a3d"
+    if Hardware::CPU.arm?
+      url "https://github.com/nais/narcos/releases/download/1.20240912113159/narc-cli_1.20240912113159_darwin_arm64.tar.gz"
+      sha256 "b2f2af9f629d9d1b2ae0d97176aa58d4f2d83f891f6aa3cb3224ce862f6fd05c"
 
       def install
         bin.install "narc"
@@ -28,8 +28,8 @@ class Narc < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/nais/narcos/releases/download/1.20240911103615/narc-cli_1.20240911103615_linux_amd64.tar.gz"
-      sha256 "fb1feea5a16c44a751b2c87af4b09ca12db3e3ea38708776b5ed21c190683294"
+      url "https://github.com/nais/narcos/releases/download/1.20240912113159/narc-cli_1.20240912113159_linux_amd64.tar.gz"
+      sha256 "903d2d1d517454846c7bcd6a19bf274413be0ae93f67a8fd950e7df69f24b99a"
 
       def install
         bin.install "narc"
