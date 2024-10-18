@@ -1,6 +1,7 @@
 # Nais Tap
 
-Just testing to see if distributing client apps via [Homebrew](https://brew.sh/) works for us.
+Distributing nais client apps via [Homebrew](https://brew.sh/).
+Primarily this tap is for MacOS users, but some formulas may work on Linux as well.
 
 ## How do I install these formulae?
 
