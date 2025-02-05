@@ -5,20 +5,20 @@
 class Nais < Formula
   desc "Command-line interface for NAIS"
   homepage "https://github.com/nais/cli"
-  version "1.20250204133705"
+  version "1.20250205121021"
 
   on_macos do
     on_intel do
-      url "https://github.com/nais/cli/releases/download/1.20250204133705/nais-cli_1.20250204133705_darwin_amd64.tar.gz"
-      sha256 "3ae7346e4b26eeceedcd6b6e3109f42e091b1412cc5a50acb45dfe0de29e1833"
+      url "https://github.com/nais/cli/releases/download/1.20250205121021/nais-cli_1.20250205121021_darwin_amd64.tar.gz"
+      sha256 "f86dd59ef2e68c20cd4479ac2652ef60d1c3c03bd62e81e94b6f4bd4b8d9ff7b"
 
       def install
         bin.install "nais"
       end
     end
     on_arm do
-      url "https://github.com/nais/cli/releases/download/1.20250204133705/nais-cli_1.20250204133705_darwin_arm64.tar.gz"
-      sha256 "27d286b5d6cd7a5818ca87cb9e0d20beedd79eccc23c98df57d0ac956f1f8693"
+      url "https://github.com/nais/cli/releases/download/1.20250205121021/nais-cli_1.20250205121021_darwin_arm64.tar.gz"
+      sha256 "70659811de946cc2956a9dcaa0e5d7aec5a166cb5d70d2953846ba11f1d007a8"
 
       def install
         bin.install "nais"
@@ -29,8 +29,18 @@ class Nais < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nais/cli/releases/download/1.20250204133705/nais-cli_1.20250204133705_linux_amd64.tar.gz"
-        sha256 "81feebbefe04ff3217f9d41723a40533c39d95b25ec010fca6da4e1a513832d2"
+        url "https://github.com/nais/cli/releases/download/1.20250205121021/nais-cli_1.20250205121021_linux_amd64.tar.gz"
+        sha256 "a8cddae9e4acc43db77957a7c9aee04dac4e07725a19cd07d742f9ed600e132d"
+
+        def install
+          bin.install "nais"
+        end
+      end
+    end
+    on_arm do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/nais/cli/releases/download/1.20250205121021/nais-cli_1.20250205121021_linux_arm64.tar.gz"
+        sha256 "6cfa8fa960f25e46681401c619058c13b48bcbfbd52b7cfd9892da86c53d4ec8"
 
         def install
           bin.install "nais"
