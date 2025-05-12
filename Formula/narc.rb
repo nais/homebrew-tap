@@ -5,20 +5,20 @@
 class Narc < Formula
   desc "NAIS Administration CLI"
   homepage "https://github.com/nais/narcos"
-  version "2.0.0-20250509123932"
+  version "2.0.0-20250512083408"
 
   on_macos do
     on_intel do
-      url "https://github.com/nais/narcos/releases/download/2.0.0-20250509123932/narc-cli_2.0.0-20250509123932_darwin_amd64.tar.gz"
-      sha256 "540aea9ccddb3d71bb3d6975b1d1b754297241a382f61eeeea33bfe0f0773bbd"
+      url "https://github.com/nais/narcos/releases/download/2.0.0-20250512083408/narc-cli_2.0.0-20250512083408_darwin_amd64.tar.gz"
+      sha256 "49ceb7884042affb635ed200dff782c55e04d743ae3883d06e761510dc2449a3"
 
       def install
         bin.install "narc"
       end
     end
     on_arm do
-      url "https://github.com/nais/narcos/releases/download/2.0.0-20250509123932/narc-cli_2.0.0-20250509123932_darwin_arm64.tar.gz"
-      sha256 "e6b7053ed27eb76476bbc231054ebcb60302196fb3b1c1063ba430f2d8e75a25"
+      url "https://github.com/nais/narcos/releases/download/2.0.0-20250512083408/narc-cli_2.0.0-20250512083408_darwin_arm64.tar.gz"
+      sha256 "64bcfd0b34e2d00d238124685175ba48324bb9e924383bd9e8672d8a90cb697b"
 
       def install
         bin.install "narc"
@@ -29,8 +29,8 @@ class Narc < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nais/narcos/releases/download/2.0.0-20250509123932/narc-cli_2.0.0-20250509123932_linux_amd64.tar.gz"
-        sha256 "372866b2895e128bf5b413919bc54f0de4b81a4bae47f213047983d4e87d2632"
+        url "https://github.com/nais/narcos/releases/download/2.0.0-20250512083408/narc-cli_2.0.0-20250512083408_linux_amd64.tar.gz"
+        sha256 "bbe619383526501a02cee817646faae9d34cf7eafa8188faccf84fd882206057"
 
         def install
           bin.install "narc"
@@ -39,8 +39,8 @@ class Narc < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nais/narcos/releases/download/2.0.0-20250509123932/narc-cli_2.0.0-20250509123932_linux_arm64.tar.gz"
-        sha256 "76e7c80363962d241ec1ed5056109205c1542b67f7105c24520cd1efcafdc1cf"
+        url "https://github.com/nais/narcos/releases/download/2.0.0-20250512083408/narc-cli_2.0.0-20250512083408_linux_arm64.tar.gz"
+        sha256 "e147ee58179bc2e893ccfd74b826bfba8734f1b23b2a9a8de5dc2bd2530a09c6"
 
         def install
           bin.install "narc"
