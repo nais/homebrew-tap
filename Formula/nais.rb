@@ -5,40 +5,52 @@
 class Nais < Formula
   desc "Command-line interface for NAIS"
   homepage "https://github.com/nais/cli"
-  version "2.0.0-202505161044"
+  version "2.0.0-202505161220"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nais/cli/releases/download/2.0.0-202505161044/nais-cli_2.0.0-202505161044_darwin_amd64.tar.gz"
-      sha256 "b11b2b2a072bf8fe107d9a9e877e6685268c02a214beba643e996b3fb145b593"
+      url "https://github.com/nais/cli/releases/download/2.0.0-202505161220/nais-cli_2.0.0-202505161220_darwin_amd64.tar.gz"
+      sha256 "f9478c72231c432da95a6e1f12c80a06a1ae241924a6eb601fb0dc67b58c29a6"
 
       def install
         bin.install "nais"
+        bash_completion.install "completions/nais.bash" => "nais"
+        zsh_completion.install "completions/nais.zsh" => "_nais"
+        fish_completion.install "completions/nais.fish"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nais/cli/releases/download/2.0.0-202505161044/nais-cli_2.0.0-202505161044_darwin_arm64.tar.gz"
-      sha256 "7eba7ce5ab01a129b2744b646b9c249a59e2ce42fd99a5e92fffa54f10d2f3bc"
+      url "https://github.com/nais/cli/releases/download/2.0.0-202505161220/nais-cli_2.0.0-202505161220_darwin_arm64.tar.gz"
+      sha256 "fc69f04a8f30f58d73f030f0b6842115cc2157d26f1b1ff343171ccb65ffd635"
 
       def install
         bin.install "nais"
+        bash_completion.install "completions/nais.bash" => "nais"
+        zsh_completion.install "completions/nais.zsh" => "_nais"
+        fish_completion.install "completions/nais.fish"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/nais/cli/releases/download/2.0.0-202505161044/nais-cli_2.0.0-202505161044_linux_amd64.tar.gz"
-      sha256 "b3d70d1802bb9e4fee879e61a97e20f174be248dfe744d6ae2e4084fcea86b95"
+      url "https://github.com/nais/cli/releases/download/2.0.0-202505161220/nais-cli_2.0.0-202505161220_linux_amd64.tar.gz"
+      sha256 "e4b7142b9e467eac5f4b51c89ab2f46d4bec6b13f49b46e68497706ae4f227f1"
       def install
         bin.install "nais"
+        bash_completion.install "completions/nais.bash" => "nais"
+        zsh_completion.install "completions/nais.zsh" => "_nais"
+        fish_completion.install "completions/nais.fish"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/nais/cli/releases/download/2.0.0-202505161044/nais-cli_2.0.0-202505161044_linux_arm64.tar.gz"
-      sha256 "74a139c1072e82bd21cfd05eca471da5fb1d6d0bd122293579f9f14c4c7d3386"
+      url "https://github.com/nais/cli/releases/download/2.0.0-202505161220/nais-cli_2.0.0-202505161220_linux_arm64.tar.gz"
+      sha256 "986bc743619b4b0dddb412176bb31229fa8f683a0891729feef817fcd6d6e58a"
       def install
         bin.install "nais"
+        bash_completion.install "completions/nais.bash" => "nais"
+        zsh_completion.install "completions/nais.zsh" => "_nais"
+        fish_completion.install "completions/nais.fish"
       end
     end
   end
