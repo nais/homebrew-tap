@@ -5,20 +5,20 @@
 class Nais < Formula
   desc "Command-line interface for NAIS"
   homepage "https://github.com/nais/cli"
-  version "2.0.0-202506180852"
+  version "2.0.0-202506181251"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nais/cli/releases/download/2.0.0-202506180852/nais-cli_2.0.0-202506180852_darwin_amd64.tar.gz"
-      sha256 "108838d72e6fc1e558fec84902466b0f86de6fb83d0b164484c4c59aa0136d12"
+      url "https://github.com/nais/cli/releases/download/2.0.0-202506181251/nais-cli_2.0.0-202506181251_darwin_amd64.tar.gz"
+      sha256 "79ff7fe2aeec89cd3918a8b97d3d3b056d6cc5ca0094605c53875fe8cf6b3e8c"
 
       def install
         bin.install "nais"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nais/cli/releases/download/2.0.0-202506180852/nais-cli_2.0.0-202506180852_darwin_arm64.tar.gz"
-      sha256 "c6fcc4fd477afba00aee919630af9eca780cfc59e7bbd1764283837474a70e76"
+      url "https://github.com/nais/cli/releases/download/2.0.0-202506181251/nais-cli_2.0.0-202506181251_darwin_arm64.tar.gz"
+      sha256 "6f9a31256b7f05cd345d8d1e1f6eeccdbc967e91c57ad29e684a82440a06b2b6"
 
       def install
         bin.install "nais"
@@ -28,15 +28,15 @@ class Nais < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/nais/cli/releases/download/2.0.0-202506180852/nais-cli_2.0.0-202506180852_linux_amd64.tar.gz"
-      sha256 "ac0b1b8c9668746c0e3d811e8ec0e4828151b73fb7e967739e8ab28fdd201f74"
+      url "https://github.com/nais/cli/releases/download/2.0.0-202506181251/nais-cli_2.0.0-202506181251_linux_amd64.tar.gz"
+      sha256 "2c4f86705a7027dd31a578759cb70a4dfc0b720d4feae5e77722cbfb1c35c029"
       def install
         bin.install "nais"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/nais/cli/releases/download/2.0.0-202506180852/nais-cli_2.0.0-202506180852_linux_arm64.tar.gz"
-      sha256 "8888c9dd3e4d33894b22ca28b1f0a6a859c2d34c67a691b01ace5dfee3860aeb"
+      url "https://github.com/nais/cli/releases/download/2.0.0-202506181251/nais-cli_2.0.0-202506181251_linux_arm64.tar.gz"
+      sha256 "d6593371472daf15ddfdd6d5d977decc812914b62af9566e6e395d958d300d18"
       def install
         bin.install "nais"
       end
