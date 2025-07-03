@@ -5,21 +5,21 @@
 class Nais < Formula
   desc "Command-line interface for NAIS"
   homepage "https://github.com/nais/cli"
-  version "v2.0.2"
+  version "v2.0.3"
   version_scheme 1
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nais/cli/releases/download/v2.0.2/nais-cli_v2.0.2_darwin_amd64.tar.gz"
-      sha256 "df28c12df48d6a1a5b6043b17c2870b1fb17483285f8f28e46a5ffa6bf6a3311"
+      url "https://github.com/nais/cli/releases/download/v2.0.3/nais-cli_v2.0.3_darwin_amd64.tar.gz"
+      sha256 "faa84c5c9627ff32d42936f709e1ddf36c4c298716278e35e6020c758230c211"
 
       def install
         bin.install "nais"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nais/cli/releases/download/v2.0.2/nais-cli_v2.0.2_darwin_arm64.tar.gz"
-      sha256 "7765c5bf4278b7f7fefded087747a261c4a83c12240ee43d6b6820609dafc3a7"
+      url "https://github.com/nais/cli/releases/download/v2.0.3/nais-cli_v2.0.3_darwin_arm64.tar.gz"
+      sha256 "045b46ebb67261a7666b3b569bcaef5ad251438b322740b6be0f94f153c2947c"
 
       def install
         bin.install "nais"
@@ -29,15 +29,15 @@ class Nais < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/nais/cli/releases/download/v2.0.2/nais-cli_v2.0.2_linux_amd64.tar.gz"
-      sha256 "83962609fc6f62c6253a3bedde882121a8ca36574b9472b48d051a205da92a64"
+      url "https://github.com/nais/cli/releases/download/v2.0.3/nais-cli_v2.0.3_linux_amd64.tar.gz"
+      sha256 "34d1117d42c2296007d8fdfc0f4c4ed5858cd0ebea2a5217bf15f5e0e29840d8"
       def install
         bin.install "nais"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/nais/cli/releases/download/v2.0.2/nais-cli_v2.0.2_linux_arm64.tar.gz"
-      sha256 "7d7b8e235fea78c15ab932df16aaafebbcfc28662f49d33f77e3aeba0fa639db"
+      url "https://github.com/nais/cli/releases/download/v2.0.3/nais-cli_v2.0.3_linux_arm64.tar.gz"
+      sha256 "923d3f7304bb25dbef787c46a0b14f8cd590af566c5075a11b0ced27afdf0852"
       def install
         bin.install "nais"
       end
