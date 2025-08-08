@@ -5,21 +5,21 @@
 class Nais < Formula
   desc "Admin command-line interface for Nais"
   homepage "https://github.com/nais/narcos"
-  version "v2.1.1"
+  version "v2.1.2"
   version_scheme 1
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nais/narcos/releases/download/v2.1.1/narc-cli_v2.1.1_darwin_amd64.tar.gz"
-      sha256 "103fed8ebcc9b58c777cacd6e5a24744bd88c2a66481d5dbd2d547926f722446"
+      url "https://github.com/nais/narcos/releases/download/v2.1.2/narc-cli_v2.1.2_darwin_amd64.tar.gz"
+      sha256 "7fb1ae8410b262104a8e5bb5bf0edcb70df4558bac3a6b71aa58855dca5cb352"
 
       def install
         bin.install "narc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nais/narcos/releases/download/v2.1.1/narc-cli_v2.1.1_darwin_arm64.tar.gz"
-      sha256 "99c7efcd7af02ffe793d1301f706b8205814d7d72e8473d4d849ef4d87224499"
+      url "https://github.com/nais/narcos/releases/download/v2.1.2/narc-cli_v2.1.2_darwin_arm64.tar.gz"
+      sha256 "22dac3f8091b5aec94e968928c07ff2fb0608b8894c05ef38f4178ea553a28cc"
 
       def install
         bin.install "narc"
@@ -29,15 +29,15 @@ class Nais < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/nais/narcos/releases/download/v2.1.1/narc-cli_v2.1.1_linux_amd64.tar.gz"
-      sha256 "c164544f687772a80066ef6d27d0f9c2e9a997a3a42b0a80b5fbc7171d515ff6"
+      url "https://github.com/nais/narcos/releases/download/v2.1.2/narc-cli_v2.1.2_linux_amd64.tar.gz"
+      sha256 "92748e01bf81c74ad4d4c21d99ab86bd06263d45e5c7210e2bc84a73921edcc3"
       def install
         bin.install "narc"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/nais/narcos/releases/download/v2.1.1/narc-cli_v2.1.1_linux_arm64.tar.gz"
-      sha256 "d8ba8cf4a50542cb32bbebdca2a022b1287953e5e7486e852b7642e5c4220c70"
+      url "https://github.com/nais/narcos/releases/download/v2.1.2/narc-cli_v2.1.2_linux_arm64.tar.gz"
+      sha256 "a75e46a57268a141e3642ce52948a9c8b37c1594a547ac2d94f016c2544790e0"
       def install
         bin.install "narc"
       end
