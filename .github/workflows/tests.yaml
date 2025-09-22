@@ -13,13 +13,10 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v5
-
-      - name: Set up Homebrew
-        run: brew update
-
-      - name: Run brew test-bot
-        env:
+      - run: brew update
+      - env:
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          brew tap $GITHUB_REPOSITORY .
-          brew test-bot --tap=$GITHUB_REPOSITORY
+        run: brew tap $GITHUB_REPOSITORY .
+      - env:
+          HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: brew test-bot --tap=$GITHUB_REPOSITORY
