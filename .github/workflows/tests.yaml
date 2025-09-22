@@ -1,5 +1,6 @@
 name: Brew Test Bot
-
+permissions:
+  contents: read
 on:
   push:
     branches: [main]
