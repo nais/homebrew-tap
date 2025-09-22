@@ -14,9 +14,18 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - run: brew update
-      - env:
-          HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: brew tap $GITHUB_REPOSITORY .
-      - env:
-          HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: brew test-bot --tap=$GITHUB_REPOSITORY
+      - name: Audit and install Casks
+        run: |
+          for cask in Casks/*.rb; do
+            brew audit --cask "$cask"
+            brew install --cask "$cask"
+            brew uninstall --cask "$cask"
+          done
+      - name: Audit, install, and test Formulae
+        run: |
+          for formula in Formula/*.rb; do
+            brew audit --formula "$formula"
+            brew install "$formula"
+            brew test "$formula"
+            brew uninstall "$formula"
+          done
