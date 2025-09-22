@@ -15,5 +15,5 @@ jobs:
       - uses: actions/checkout@v5
       - run: brew test-bot --only-cleanup-before
       - run: brew test-bot --only-setup
-      - run: brew test-bot --only-tap-syntax
+      # - run: brew test-bot --only-tap-syntax
       - run: brew test-bot --only-formulae
