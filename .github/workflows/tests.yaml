@@ -13,19 +13,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v5
-      - run: brew update
-      - name: Audit and install Casks
-        run: |
-          for cask in Casks/*.rb; do
-            brew audit --cask "$cask"
-            brew install --cask "$cask"
-            brew uninstall --cask "$cask"
-          done
-      - name: Audit, install, and test Formulae
-        run: |
-          for formula in Formula/*.rb; do
-            brew audit --formula "$formula"
-            brew install "$formula"
-            brew test "$formula"
-            brew uninstall "$formula"
-          done
+      - run: brew test-bot --only-cleanup-before
+      - run: brew test-bot --only-setup
+      - run: brew test-bot --only-tap-syntax
+      - run: brew test-bot --only-formulae
