@@ -5,28 +5,28 @@
 class Narc < Formula
   desc "Admin command-line interface for Nais"
   homepage "https://github.com/nais/narcos"
-  version "v2.2.16"
+  version "v2.2.19"
   version_scheme 1
 
   on_macos do
     on_intel do
-      url "https://github.com/nais/narcos/releases/download/v2.2.16/narc-cli_darwin_amd64.tgz"
-      sha256 "3904DC21DC7145FEA0D42C6D9A8E089DF31B3DDAC2560522F166C42AE7FE7374"
+      url "https://github.com/nais/narcos/releases/download/v2.2.19/narc-cli_darwin_amd64.tgz"
+      sha256 "D7499534FAE334C94F06697603316E633C6B776A304C2A517C65ACD13E30B7AD"
     end
     on_arm do
-      url "https://github.com/nais/narcos/releases/download/v2.2.16/narc-cli_darwin_arm64.tgz"
-      sha256 "2D40963880816DDD501C7EF57BF47DD51EEE962B23E8A35524D74CDC6D2DC501"
+      url "https://github.com/nais/narcos/releases/download/v2.2.19/narc-cli_darwin_arm64.tgz"
+      sha256 "FCA5890A447F2500478D7B89BF908608A6316051D718D42A0A6E06FDDBEE9CED"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/nais/narcos/releases/download/v2.2.16/narc-cli_linux_amd64.tgz"
-      sha256 "14FBB99777F63C4EC9C96FE8E96217522999A3B57AA2A8BC5E66A5FB47D00C25"
+      url "https://github.com/nais/narcos/releases/download/v2.2.19/narc-cli_linux_amd64.tgz"
+      sha256 "E3A097767FDA14A67A0DE1475D73890543CF3BFE07575AB6682240292F3DBF55"
     end
     on_arm do
-      url "https://github.com/nais/narcos/releases/download/v2.2.16/narc-cli_linux_arm64.tgz"
-      sha256 "93FFDC99B9B2488E3887B7281633B4846B48E07A92563B27F075FB378C35AC32"
+      url "https://github.com/nais/narcos/releases/download/v2.2.19/narc-cli_linux_arm64.tgz"
+      sha256 "4BC88DD4DE60A6162DA1D92CBFA94DC77ADD3542BFEA591BF9A95492E85ECC2E"
     end
   end
 
