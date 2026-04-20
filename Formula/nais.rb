@@ -4,28 +4,28 @@
 class Nais < Formula
   desc "Command-line interface for Nais"
   homepage "https://github.com/nais/cli"
-  version "5.26.1"
+  version "5.26.2"
   version_scheme 1
 
   on_macos do
     on_intel do
-      url "https://github.com/nais/cli/releases/download/v5.26.1/nais-cli_darwin_amd64.tgz"
-      sha256 "3a4ee854031333eff0fcfbeeffa36d8800135e3177a26a93b3eff9766ca129f4"
+      url "https://github.com/nais/cli/releases/download/v5.26.2/nais-cli_darwin_amd64.tgz"
+      sha256 "f2834086373dfa13909bbf32fbaefc173667e10d94402be270fc376e84ad8bd6"
     end
     on_arm do
-      url "https://github.com/nais/cli/releases/download/v5.26.1/nais-cli_darwin_arm64.tgz"
-      sha256 "4c2260e6f80f2289868e8777bcb29a7d4df7854e3f11be3711b5d6d61cfcf204"
+      url "https://github.com/nais/cli/releases/download/v5.26.2/nais-cli_darwin_arm64.tgz"
+      sha256 "093b45afdf914dbaec723e2552741edc84ed97b3be63a28c95dc312af2441558"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/nais/cli/releases/download/v5.26.1/nais-cli_linux_amd64.tgz"
-      sha256 "213ad7539ddfa0351240d02ecb4e3f67f40adc7b6cbdfbce6cf5a91b821594d6"
+      url "https://github.com/nais/cli/releases/download/v5.26.2/nais-cli_linux_amd64.tgz"
+      sha256 "ad4e8898fb901040fcc7b2ab9636c3d05908df017f45c32d77abe4f5758abb98"
     end
     on_arm do
-      url "https://github.com/nais/cli/releases/download/v5.26.1/nais-cli_linux_arm64.tgz"
-      sha256 "60a0e346700717ea933fa535e931112c62570c53dec15c5e66c0096708556f17"
+      url "https://github.com/nais/cli/releases/download/v5.26.2/nais-cli_linux_arm64.tgz"
+      sha256 "784e917ebb909873383895f60f0c1022acffbea1f15644e7979c1bfb0e2faabc"
     end
   end
 
