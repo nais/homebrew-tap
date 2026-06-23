@@ -7,7 +7,13 @@ Primarily this tap is for MacOS users, but some formulas may work on Linux as we
 
 `brew install nais/tap/<formula>`
 
-Or `brew tap nais/tap` and then `brew install <formula>`.
+Or
+
+```
+brew tap nais/tap
+brew trust nais/tap
+brew install <formula>
+```
 
 ## Documentation
 
